@@ -1,0 +1,12 @@
+{
+	"files": {
+		"Readme.md": "c7f70473c8253d4fdb2419e58af529e1f44f92d9e5a7ef37096a860354cca766",
+		"index.js": "59e255eb0ee574dc074538c8f61a82d0e19e40679520321e35686a32b63b3929",
+		"module.json": "cce59d13472fb445b0a412fe3d2e89f1c042bf8be0b72c7e359f9b8f05aea6db"
+	},
+	"defs": {
+		"C_SHOW_ITEM_TOOLTIP_EX": 3,
+		"S_SHOW_ITEM_TOOLTIP": 9,
+		"S_USER_PAPERDOLL_INFO": 5
+	}
+}
