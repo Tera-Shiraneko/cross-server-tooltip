@@ -1,0 +1,16 @@
+{
+    "disableAutoUpdate": false,
+    "name": "Cross Server Tooltip",
+    "author": "Shalltearz",
+    "description": "Tera proxy module to inspect gear stats if people are from another server.",
+    "version": "1.0",
+    "options": {
+        "niceName": "Cross Server Tooltip",
+        "guiName": "Cross Server Tooltip",
+        "settingsVersion": 1,
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js"
+    },
+    "servers": ["https://raw.githubusercontent.com/Tera-Shiraneko/cross-server-tooltip/master/"],
+    "supportUrl": "https://github.com/Tera-Shiraneko/cross-server-tooltip/issues"
+}
