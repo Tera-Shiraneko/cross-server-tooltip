@@ -8,7 +8,7 @@
 ---
 
 ## Interface Command
-- Same commands like the ones from console command listed above.
+- Same command like the one from console command listed above.
 
 ---
 
