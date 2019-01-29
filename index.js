@@ -65,8 +65,7 @@ module.exports = function Crossservertooltip(mod) {
                 ownerId: item.ownerId,
                 soulbound: item.soulbound,
                 soulboundName: paperdoll.name,
-                passivitySets: item.passivitySets,
-                extraPassivitySets: item.extraPassivitySets
+                passivitySets: item.passivitySets
             });
         }
     });

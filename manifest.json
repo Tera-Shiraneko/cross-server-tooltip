@@ -1,14 +1,14 @@
 {
-	"files": {
-		"Readme.md": "bf3288c070fc8fe190fe84655b42d799d877ddf0bb8c10ed4aff6a8550aa19b3",
-		"index.js": "540f7ae4c0baf165621f078ace3079685443f4dfbe56265e76dae44e070d719e",
-		"module.json": "daa8468bfce9546fc74f6354d1740121db6d8d959a012c01a11d7750e6f1c532",
-		"settings_migrator.js": "0b15a07833baaac0f75ac3beb510ce198346ecc870c3182f5098e9c9ace44dd2",
-		"settings_structure.js": "0536ee9faa16c3178b784aaab44b881221c293949c5e2fe8fa13e3d13c5b0ed0"
-	},
-	"defs": {
-		"C_SHOW_ITEM_TOOLTIP_EX": 3,
-		"S_SHOW_ITEM_TOOLTIP": 9,
-		"S_USER_PAPERDOLL_INFO": 7
-	}
+    "files": {
+        "Readme.md": "38c1c559f55749ce4182434ec8897da833fb12a98bbae9d4ca694f43d2eac88f",
+        "index.js": "0e670a03f809d2b47bafbff5080f276d69552a55fa9120845a89a1a4bbe71fb2",
+        "module.json": "daa8468bfce9546fc74f6354d1740121db6d8d959a012c01a11d7750e6f1c532",
+        "settings_migrator.js": "0b15a07833baaac0f75ac3beb510ce198346ecc870c3182f5098e9c9ace44dd2",
+        "settings_structure.js": "0536ee9faa16c3178b784aaab44b881221c293949c5e2fe8fa13e3d13c5b0ed0"
+    },
+    "defs": {
+        "C_SHOW_ITEM_TOOLTIP_EX": 3,
+        "S_SHOW_ITEM_TOOLTIP": 9,
+        "S_USER_PAPERDOLL_INFO": 7
+    }
 }

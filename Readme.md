@@ -2,8 +2,13 @@
 
 ---
 
-## Command
+## Console Command
 - Type `/8 crosstool` to enable or disable the module.
+
+---
+
+## Interface Command
+- Same commands like the ones from console command listed above.
 
 ---
 
