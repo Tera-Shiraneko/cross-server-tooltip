@@ -3,7 +3,7 @@
 ---
 
 ## Console Command
-- Type `/8 crosstool` to enable or disable the module.
+- Type `/8 crosstool` to enable or disable the module. Enabled by default.
 
 ---
 
