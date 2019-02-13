@@ -8,6 +8,11 @@ module.exports = function Crossservertooltip(mod) {
         mod.warn('It is highly recommended that you download the latest official version from the #proxy channel in http://tiny.cc/caalis-tera-proxy');
     }
 
+    if (mod.platform === 'classic') {
+        mod.command.message('This version of tera is currently not supported.');
+        return;
+    }
+
     let item, paperdoll,
         crystals = [];
 
