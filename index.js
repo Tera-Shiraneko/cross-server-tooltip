@@ -30,15 +30,14 @@ module.exports = function Crossservertooltip(mod) {
     });
 
     mod.hook('C_SHOW_ITEM_TOOLTIP_EX', 3, (event) => {
-        if (!mod.settings.enabled) return;
-        if (event.serverId != 0 && paperdoll != undefined) {
+        if (mod.settings.enabled && event.serverId != 0 && paperdoll != undefined) {
             for (let i = 0; i < paperdoll.items.length; i++) {
                 if (paperdoll.items[i].dbid === event.id) {
                     item = paperdoll.items[i];
                     break;
                 }
             }
-            if (item == undefined) return;
+            if (item === undefined) return;
             if ([1, 3].includes(item.slot)) {
                 crystals = [{
                     dbid: item.crystal1
@@ -55,10 +54,11 @@ module.exports = function Crossservertooltip(mod) {
                     dbid: item.crystal1
                 }];
             }
-            for (var passive_1 in item.passivitySets) 
-                for (var passive_2 in item.passivitySets[passive_1].passivities) 
+
+            for (var passive_1 in item.passivitySets)
+                for (var passive_2 in item.passivitySets[passive_1].passivities)
                     item.passivitySets[passive_1].passivities[passive_2].dbid = item.passivitySets[passive_1].passivities[passive_2].id;
-			
+
             mod.send('S_SHOW_ITEM_TOOLTIP', 9, {
                 type: 24,
                 unk27: -1,
