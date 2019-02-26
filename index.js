@@ -21,7 +21,7 @@ module.exports = function Crossservertooltip(mod) {
             ui.show();
         } else {
             mod.settings.enabled = !mod.settings.enabled;
-            mod.command.message(`Cross server tooltip is now ${mod.settings.enabled ? "enabled" : "disabled"}.`);
+            mod.command.message(`Cross server tooltip is now ${mod.settings.enabled ? 'enabled' : 'disabled'}.`);
         }
     });
 
