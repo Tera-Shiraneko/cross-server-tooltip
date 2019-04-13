@@ -1,16 +1,11 @@
 const SettingsUI = require('tera-mod-ui').Settings;
 
-module.exports = function Crossservertooltip(mod) {
+module.exports = function Cross_Server_Tooltip(mod) {
 
     if (mod.proxyAuthor !== 'caali' || !global.TeraProxy) {
         mod.warn('You are trying to use this module on an unsupported legacy version of tera-proxy.');
         mod.warn('The module may not work as expected, and even if it works for now, it may break at any point in the future!');
         mod.warn('It is highly recommended that you download the latest official version from the #proxy channel in http://tiny.cc/caalis-tera-proxy');
-    }
-
-    if (mod.platform === 'classic') {
-        mod.log('The module you are trying to use does not support the version of the game you are running.');
-        return;
     }
 
     let item, paperdoll,
@@ -25,7 +20,7 @@ module.exports = function Crossservertooltip(mod) {
         }
     });
 
-    mod.hook('S_USER_PAPERDOLL_INFO', 7, (event) => {
+    mod.hook('S_USER_PAPERDOLL_INFO', 8, (event) => {
         paperdoll = event;
     });
 
@@ -59,21 +54,21 @@ module.exports = function Crossservertooltip(mod) {
                 for (var passive_2 in item.passivitySets[passive_1].passivities)
                     item.passivitySets[passive_1].passivities[passive_2].dbid = item.passivitySets[passive_1].passivities[passive_2].id;
 
-            mod.send('S_SHOW_ITEM_TOOLTIP', 9, {
-                type: 24,
-                unk27: -1,
-                enchant: 0,
-                dbid: item.id,
-                id: item.dbid,
-                id2: item.dbid,
-                slot: item.slot,
-                crystals: crystals,
+            mod.send('S_SHOW_ITEM_TOOLTIP', 10, {
+                mergedPassivities: item.mergedPassivities,
+                passivitySets: item.passivitySets,
+                soulboundName: paperdoll.name,
+                soulbound: item.soulbound,
+                ownerId: item.ownerId,
                 amount: item.amount,
                 compareStats: false,
-                ownerId: item.ownerId,
-                soulbound: item.soulbound,
-                soulboundName: paperdoll.name,
-                passivitySets: item.passivitySets
+                crystals: crystals,
+                dbid2: item.dbid,
+                slot: item.slot,
+                dbid: item.dbid,
+                id: item.id,
+                enchant: 0,
+                type: 24
             });
         }
     });
